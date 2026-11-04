@@ -8,11 +8,12 @@ Security fülnél már csak beállítottam a szerverre:
 
 <img width="1449" height="345" alt="Képernyőfotó 2026-10-19 - 14 44 17" src="https://github.com/user-attachments/assets/5efd37cc-1b7e-4999-8d2f-20fa56b9c7eb" />
 
-Ezután csatlakozunk a szerverünkhöz és telepítjük az agent-t.
+Ezután csatlakozunk a szerverünkhöz és telepítjük az agent-t. Amazon Linux 2023-on a `/var/log/messages` fájl nem mindig jön létre automatikusan. Először telepíteni kell az `rsyslog` szolgáltatást, ami létrehozza és írja ezt a logfájlt. 
 
-Ehhez használhatjuk Linux esetén a következőt:
 ```bash
-sudo yum install -y amazon-cloudwatch-agent
+sudo dnf install -y rsyslog amazon-cloudwatch-agent
+sudo systemctl enable --now rsyslog
+sudo systemctl status rsyslog
 ```
 <img width="1463" height="716" alt="Képernyőfotó 2026-10-19 - 14 47 00" src="https://github.com/user-attachments/assets/79d8e06e-0820-4b56-88e0-d1369f627956" />
 

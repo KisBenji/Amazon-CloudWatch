@@ -47,7 +47,9 @@ EOF
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/etc/config.json
 ```
-<img width="1252" height="319" alt="Képernyőfotó 2026-10-19 - 15 51 26" src="https://github.com/user-attachments/assets/ceb6c6d5-6245-48e9-b788-7172e6cf9ba2" />
+
+<img width="1327" height="415" alt="Képernyőfotó 2026-11-04 - 14 17 21" src="https://github.com/user-attachments/assets/f73521af-cfe2-4ccc-8e66-6d77fefd696a" />
+
 
 Itt a file path lesz a beállított log fájlok. A log group name az Ec2/message elnevezést kapja. A stream neve az EC2 ID-ja. 
 

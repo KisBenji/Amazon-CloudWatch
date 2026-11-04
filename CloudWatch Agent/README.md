@@ -48,7 +48,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/etc/config.json
 ```
 
-<img width="1327" height="415" alt="Képernyőfotó 2026-11-04 - 14 17 21" src="https://github.com/user-attachments/assets/f73521af-cfe2-4ccc-8e66-6d77fefd696a" />
+<img width="1251" height="401" alt="Képernyőfotó 2026-11-04 - 14 19 18" src="https://github.com/user-attachments/assets/475b0a91-f78b-46ac-998a-ede1daa4b7aa" />
 
 
 Itt a file path lesz a beállított log fájlok. A log group name az Ec2/message elnevezést kapja. A stream neve az EC2 ID-ja. 
@@ -60,6 +60,13 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -m ec2 \
   -c file:/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json \
   -s
+```
+Ellenőrizni is tudjuk, hogy fut-e az agent: 
+
+```bash
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a status
+sudo systemctl status amazon-cloudwatch-agent
+sudo tail -n 50 /opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log
 ```
 
 Létrejött log group a CLoudWatchban:

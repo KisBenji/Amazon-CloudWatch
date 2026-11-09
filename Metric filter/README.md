@@ -3,7 +3,10 @@ Hozzárendelhetjük a korábban létrehozott SNC regisztrációnkat és email-es
 
 Először a Log management -> metric filter állítunk be: 
 
-<img width="1189" height="660" alt="Képernyőfotó 2026-10-19 - 16 37 17" src="https://github.com/user-attachments/assets/1bc9a348-5d25-44bf-ad5a-a95ea7662e34" />
+
+<img width="1204" height="404" alt="Képernyőfotó 2026-11-09 - 14 29 08" src="https://github.com/user-attachments/assets/6124d839-3e1f-4388-ad3a-59f52a00951e" />
+
+<img width="1187" height="667" alt="Képernyőfotó 2026-11-09 - 14 29 52" src="https://github.com/user-attachments/assets/1f2d33ff-4606-49de-97ec-22ebfb729604" />
 
 A Cloudwatchban beállítunk egy Alarm-ot, az előbb létrehozott filterre: 
 

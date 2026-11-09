@@ -1,3 +1,4 @@
+<img width="1199" height="636" alt="Képernyőfotó 2026-11-09 - 14 30 37" src="https://github.com/user-attachments/assets/82e13e79-00a0-4351-afec-4ff9ef3563e6" />
 Van lehetőségünk a metric filter használatával alarm beállítására, akár kulcsszóra, mint ERROR. 
 Hozzárendelhetjük a korábban létrehozott SNC regisztrációnkat és email-es riasztást is beállíthatunk ha a szerverünk ERROR üzenetet kap.
 

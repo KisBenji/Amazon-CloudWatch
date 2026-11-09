@@ -56,13 +56,12 @@ Ahogy látjuk a sok ERROR üzenet hatására átlépte a beállított határért
 
 <img width="1194" height="661" alt="Képernyőfotó 2026-11-09 - 14 42 09" src="https://github.com/user-attachments/assets/8ec0379a-a8a2-40dd-9ea2-d723ea009fdc" />
 
-<img width="1194" height="661" alt="Képernyőfotó 2026-11-09 - 14 42 09" src="https://github.com/user-attachments/assets/19e3eb43-2bab-40f2-a993-426f151d77de" />
-
-
 Email riasztás megérkezett a regisztrált SNC email címre
 
 <img width="749" height="713" alt="Képernyőfotó 2026-11-09 - 14 44 01" src="https://github.com/user-attachments/assets/d18c4fc4-e2b9-4818-ab2e-d3da4f6b50af" />
 
 Miután nem érkezett több ERROR üzenet a szerverre visszaállt az alap OK beállításra, és email üzenetet is küldött:
 
+<img width="1185" height="635" alt="Képernyőfotó 2026-11-09 - 15 04 05" src="https://github.com/user-attachments/assets/1297e140-4438-4dd0-afef-0189c3c484eb" />
 
+<img width="757" height="745" alt="Képernyőfotó 2026-11-09 - 15 04 17" src="https://github.com/user-attachments/assets/da916d5a-9540-4eb7-93d0-f365eff5838b" />

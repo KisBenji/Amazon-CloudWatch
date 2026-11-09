@@ -1,4 +1,3 @@
-<img width="1199" height="636" alt="Képernyőfotó 2026-11-09 - 14 30 37" src="https://github.com/user-attachments/assets/82e13e79-00a0-4351-afec-4ff9ef3563e6" />
 Van lehetőségünk a metric filter használatával alarm beállítására, akár kulcsszóra, mint ERROR. 
 Hozzárendelhetjük a korábban létrehozott SNC regisztrációnkat és email-es riasztást is beállíthatunk ha a szerverünk ERROR üzenetet kap.
 
@@ -8,6 +7,15 @@ Először a Log management -> metric filter állítunk be:
 <img width="1204" height="404" alt="Képernyőfotó 2026-11-09 - 14 29 08" src="https://github.com/user-attachments/assets/6124d839-3e1f-4388-ad3a-59f52a00951e" />
 
 <img width="1187" height="667" alt="Képernyőfotó 2026-11-09 - 14 29 52" src="https://github.com/user-attachments/assets/1f2d33ff-4606-49de-97ec-22ebfb729604" />
+
+Meghatározzuk, milyen filter pattern szeretnénk. Jelen esetben nekünk az ERROR-ra van szükségünk. 
+
+<img width="1199" height="636" alt="Képernyőfotó 2026-11-09 - 14 30 37" src="https://github.com/user-attachments/assets/82e13e79-00a0-4351-afec-4ff9ef3563e6" />
+
+Elnevezzük és konfiguráljuk az filterünket: 
+
+<img width="1180" height="661" alt="Képernyőfotó 2026-11-09 - 14 31 45" src="https://github.com/user-attachments/assets/cab5bbcb-8f15-41b4-b331-c9d5b3c82fbb" />
+
 
 A Cloudwatchban beállítunk egy Alarm-ot, az előbb létrehozott filterre: 
 

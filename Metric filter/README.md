@@ -44,9 +44,8 @@ A kiegészítő beállításnál kiválasztott not breaching lehetőséggel azt 
 
 <img width="1450" height="712" alt="Képernyőfotó 2026-10-19 - 16 42 53" src="https://github.com/user-attachments/assets/20bd180a-c76e-43a5-9e47-777102932861" />
 
-Beállítjuk, mind az ALARM, mind az OK esetén az email értesítést. Ez azt fogja jelenteni, hogy ha 5 perc alatt 5db ERROR üzenet érkezik riasztást küld és emailben is jelez. Ha letelik az 5 perc és nincs ERROR üzenet OK állapotba kerül vissza és jelezni fogja a rendszer nekünk, hogy minden rendben.
+Beállítjuk, mind az ALARM, mind az OK esetén az email értesítést. Ez azt fogja jelenteni, hogy ha 5 perc alatt 5db ERROR üzenet érkezik riasztást küld és emailben is jelez. Ha letelik az 5 perc és nincs 5db ERROR üzenet OK állapotba kerül vissza és jelezni fogja a rendszer nekünk, hogy minden rendben.
 
-<img width="1208" height="445" alt="Képernyőfotó 2026-10-19 - 16 43 35" src="https://github.com/user-attachments/assets/5d635fa6-bd11-4031-a925-cee04e5ec9d1" />
 
 Teszteljük a riasztást és ERROR üzenetet küldünk a szervernek. Ha mindent jól csináltunk akkor riasztást fog jelezni a Cloudwatch-ban és email-ben is kapunk üzenetet.
 

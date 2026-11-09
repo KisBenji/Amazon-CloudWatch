@@ -12,12 +12,33 @@ Meghatározzuk, milyen filter pattern szeretnénk. Jelen esetben nekünk az ERRO
 
 <img width="1199" height="636" alt="Képernyőfotó 2026-11-09 - 14 30 37" src="https://github.com/user-attachments/assets/82e13e79-00a0-4351-afec-4ff9ef3563e6" />
 
-Elnevezzük és konfiguráljuk az filterünket: 
+Elnevezzük és konfiguráljuk az filterünket és létrehozzuk a Create Filter gombbal.
 
 <img width="1180" height="661" alt="Képernyőfotó 2026-11-09 - 14 31 45" src="https://github.com/user-attachments/assets/cab5bbcb-8f15-41b4-b331-c9d5b3c82fbb" />
+<img width="862" height="340" alt="Képernyőfotó 2026-11-09 - 14 31 58" src="https://github.com/user-attachments/assets/4ea56325-fc2e-4f3e-9c3b-3d7f3f6ee0fd" />
 
 
-A Cloudwatchban beállítunk egy Alarm-ot, az előbb létrehozott filterre: 
+Ezután, hogy megjelenjen nekünk a metrika, először csatlakozni kell az EC2-hez és egy hiba üzenetet generálni. Ehhez használhatjuk az alábbi segédletet: 
+
+```bash
+logger "CloudMentor: ERROR teszt uzenet"
+sudo tail -n 20 /var/log/messages
+```
+
+Ezután a létrehozott metric filterre a Cloudwatchban beállítunk egy Alarm-ot. Az elküldött hibaüzenettel azonnal megjelenik a metrikák között az előzőleg generált error-count-vms elnevezésű:
+
+<img width="655" height="672" alt="Képernyőfotó 2026-11-09 - 14 37 00" src="https://github.com/user-attachments/assets/3b2e963a-5475-4c82-8430-c13aa1a25e1a" />
+
+Ezt fogjuk kiválasztani és konfigurálni a riasztásunkat. 
+
+<img width="1328" height="729" alt="Képernyőfotó 2026-11-09 - 14 37 13" src="https://github.com/user-attachments/assets/d2c61cc3-6b7b-4aa6-a0a9-7133cad9fd12" />
+
+A beállításokkor azt adjuk meg, hogy minimum 5 hibaüzenetnek kell érkeznie 5 percen belül, hogy riasztást küldjön nekünk a Cloudwatch. 
+
+<img width="1139" height="665" alt="Képernyőfotó 2026-11-09 - 14 38 29" src="https://github.com/user-attachments/assets/4660f44c-453d-4f4e-a76c-5cf4add888ce" />
+
+
+
 
 <img width="1442" height="668" alt="Képernyőfotó 2026-10-19 - 16 42 13" src="https://github.com/user-attachments/assets/01a668b6-86fe-4e40-b35e-b639ce15a3da" />
 

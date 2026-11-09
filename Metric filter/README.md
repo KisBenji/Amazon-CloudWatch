@@ -1,7 +1,7 @@
 Van lehetőségünk a metric filter használatával alarm beállítására, akár kulcsszóra, mint ERROR. 
 Hozzárendelhetjük a korábban létrehozott SNC regisztrációnkat és email-es riasztást is beállíthatunk ha a szerverünk ERROR üzenetet kap.
 
-Először a Log management -> metric filter-ben állítjuk be az ERROR üzentre a filterünket.
+Először a Log management -> metric filter állítunk be: 
 
 <img width="1189" height="660" alt="Képernyőfotó 2026-10-19 - 16 37 17" src="https://github.com/user-attachments/assets/1bc9a348-5d25-44bf-ad5a-a95ea7662e34" />
 

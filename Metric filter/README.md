@@ -50,12 +50,19 @@ Beállítjuk, mind az ALARM, mind az OK esetén az email értesítést. Ez azt f
 
 Teszteljük a riasztást és ERROR üzenetet küldünk a szervernek. Ha mindent jól csináltunk akkor riasztást fog jelezni a Cloudwatch-ban és email-ben is kapunk üzenetet.
 
-<img width="864" height="336" alt="Képernyőfotó 2026-10-19 - 16 44 35" src="https://github.com/user-attachments/assets/18d6b951-a492-4e3e-b3ac-c12b4789a4ba" />
+<img width="661" height="688" alt="Képernyőfotó 2026-11-09 - 14 40 11" src="https://github.com/user-attachments/assets/7a81a100-852d-4a60-b5a5-8a49f3228914" />
+
+Ahogy látjuk a sok ERROR üzenet hatására átlépte a beállított határértéket:
+
+<img width="1194" height="661" alt="Képernyőfotó 2026-11-09 - 14 42 09" src="https://github.com/user-attachments/assets/8ec0379a-a8a2-40dd-9ea2-d723ea009fdc" />
+
+<img width="1194" height="661" alt="Képernyőfotó 2026-11-09 - 14 42 09" src="https://github.com/user-attachments/assets/19e3eb43-2bab-40f2-a993-426f151d77de" />
+
 
 Email riasztás megérkezett a regisztrált SNC email címre
 
-<img width="716" height="690" alt="Képernyőfotó 2026-10-19 - 16 47 08" src="https://github.com/user-attachments/assets/335b4d47-826f-4a76-bcc6-8296f16e9c08" />
+<img width="749" height="713" alt="Képernyőfotó 2026-11-09 - 14 44 01" src="https://github.com/user-attachments/assets/d18c4fc4-e2b9-4818-ab2e-d3da4f6b50af" />
 
-Tesztünket a minden rendben üzenettel zárjuk, amire riasztást nem kapunk mivel nem tartalmazza az ERROR szót.
+Miután nem érkezett több ERROR üzenet a szerverre visszaállt az alap OK beállításra, és email üzenetet is küldött:
 
-<img width="799" height="396" alt="Képernyőfotó 2026-10-19 - 16 50 25" src="https://github.com/user-attachments/assets/d905902f-497e-4272-8125-8a7d8898340f" />
+

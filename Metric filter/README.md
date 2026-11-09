@@ -22,7 +22,6 @@ Ezután, hogy megjelenjen nekünk a metrika, először csatlakozni kell az EC2-h
 
 ```bash
 logger "CloudMentor: ERROR teszt uzenet"
-sudo tail -n 20 /var/log/messages
 ```
 
 Ezután a létrehozott metric filterre a Cloudwatchban beállítunk egy Alarm-ot. Az elküldött hibaüzenettel azonnal megjelenik a metrikák között az előzőleg generált error-count-vms elnevezésű:
@@ -37,10 +36,10 @@ A beállításokkor azt adjuk meg, hogy minimum 5 hibaüzenetnek kell érkeznie 
 
 <img width="1139" height="665" alt="Képernyőfotó 2026-11-09 - 14 38 29" src="https://github.com/user-attachments/assets/4660f44c-453d-4f4e-a76c-5cf4add888ce" />
 
+A kiegészítő beállításnál kiválasztott not breaching lehetőséggel azt fogadjuk el, hogy ha nincs meg az 5 hibaüzenet akkor minden rendben van. 
 
+<img width="369" height="471" alt="Képernyőfotó 2026-11-09 - 14 38 35" src="https://github.com/user-attachments/assets/c1a4c0c2-a466-4625-aef8-181fb6a5b15d" />
 
-
-<img width="1442" height="668" alt="Képernyőfotó 2026-10-19 - 16 42 13" src="https://github.com/user-attachments/assets/01a668b6-86fe-4e40-b35e-b639ce15a3da" />
 
 
 <img width="1450" height="712" alt="Képernyőfotó 2026-10-19 - 16 42 53" src="https://github.com/user-attachments/assets/20bd180a-c76e-43a5-9e47-777102932861" />
